@@ -1,0 +1,152 @@
+/* ------------
+  Poppins Google Font
+  ------------- */
+  @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-weight: 500;
+  font-family: 'Poppins', sans-serif;
+}
+body{
+  background: #F3F1FF;
+}
+
+/* ----------------------------
+  Common CSS or Ulities CSS
+  ----------------------------- */
+  a{
+    text-decoration: none;
+  }
+  hr{
+    color: #D1D1D1;
+    margin-bottom: 30px;
+    margin-top: 30px;
+  }
+  ul li {
+    list-style: none;
+  }
+  .container {
+    width: 870px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 0 auto;
+  }
+.section-title {
+  font-size: 24px;
+  color: #562EFF;
+}
+
+
+  /* ----------------
+    Header CSS
+    ----------------- */
+.header {
+  background-color: #562EFF;
+  padding: 35px 0;
+}
+.header .container{
+  flex-direction: row;
+}
+.header .logo{
+  display: flex;
+  align-items: center;
+}
+.header .logo img {
+  max-width: 45px;
+  margin-right: 16px;
+}
+.header .logo .logo-content{
+  font-size: 36px;
+  color: #FFFFFF;
+}
+.header .main-menu nav ul{
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+}
+.header .main-menu nav ul li {
+  margin-left: 36px;
+}
+.header .main-menu nav ul li a {
+  font-size: 16px;
+  color: #FFFFFF;
+  text-transform: uppercase;
+  transition: 1s ease;
+}
+
+
+
+
+  /* ----------------
+    Main Area CSS
+    ----------------- */
+.main .container {
+  background: #FFFFFF;
+  padding: 35px;
+}
+    /* Top Player Area */
+    .top-player {
+      width: 100%;
+    }
+    .players {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-gap: 30px;
+    }
+    .player{
+      display: flex;
+      align-items: center;
+      cursor: pointer;
+      padding: 15px;
+      border-radius: 60px;
+      box-shadow: 0px 5.34229px 13.3557px rgb(0 0 0 / 5%);
+      transition: 1s ease;
+    }
+    .player:hover,
+    .signle-blog:hover{
+      box-shadow: 0px 5.34229px 13.3557px rgb(0 0 0 / 50%);
+    }
+    .players .thumbnail img {
+      width: 56px;
+      margin-right: 16px;
+    }
+
+    /* Blog CSS */
+.top-blog .section-title{
+  margin-bottom: 15px;
+}
+.blogs{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-row-gap: 26px;
+  grid-column-gap: 46px;
+}
+.signle-blog {
+  display: flex;
+  padding: 15px;
+  box-shadow: 0px 5.34229px 13.3557px rgb(0 0 0 / 5%);
+  transition: 1s ease;
+  border-radius: 20px;
+  cursor: pointer;
+}
+.blogs .blog-thumbnail img {
+  width: 177px;
+  height: auto;
+  margin-right: 16px;
+}
+.blog-content h3 {
+  font-size: 20px;
+  color: #000; 
+  
+}
+.blog-content span {
+  color: #9F9F9F;
+}
+.blog-content a {
+  color: #562EFF;
+}
