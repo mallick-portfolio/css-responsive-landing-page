@@ -85,9 +85,12 @@ body{
   /* ----------------
     Main Area CSS
     ----------------- */
+.main .section-margin{
+  margin-top: 30px;
+}
 .main .container {
-  background: #FFFFFF;
   padding: 35px;
+  background: #FFFFFF;
 }
     /* Top Player Area */
     .top-player {
@@ -108,7 +111,8 @@ body{
       transition: 1s ease;
     }
     .player:hover,
-    .signle-blog:hover{
+    .signle-blog:hover,
+    .single-course:hover{
       box-shadow: 0px 5.34229px 13.3557px rgb(0 0 0 / 50%);
     }
     .players .thumbnail img {
@@ -149,4 +153,59 @@ body{
 }
 .blog-content a {
   color: #562EFF;
+}
+
+/* Latest Course */
+
+.latest-course .section-title {
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+.courses{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-column-gap: 35px;
+}
+.single-course {
+  padding: 15px;
+  box-shadow: 0px 5.34229px 13.3557px rgb(0 0 0 / 5%);
+  border-radius: 20px;
+  transition: 1s ease;
+
+}
+.course-thumbnail img{
+  height: auto;
+  width: 224px;
+}
+.couse-detail h3 {
+  font-size: 20px;
+  color: #1E1E1E;
+  margin-top: 10px;
+}
+.couse-detail .author {
+  color: #ED6B4F;
+  font-size: 14px;
+}
+.course-info {
+  display: flex;
+  justify-content: space-between;
+}
+.course-ratting span {
+  color: #FFC014;
+  font-size: 12px;
+  
+}
+.course-ratting span .unfill {
+  color: #AEAEAE;
+}
+.overall-rating {
+  margin-left: 15px;
+  font-size: 14px;
+  color: #A2A2A2;
+}
+.course-duration {
+  background: #FFE4E8;
+  padding:5px 10px;
+  border-radius: 20px;
+  color: #FF4A60;
 }
